@@ -1,35 +1,24 @@
-const users = [{
-        "email": "rubronegro@gmail.com",
-        "password": "00000000"
-    },
-    {
-        "email": "gabigol@gmail.com",
-        "password": "12345678"
-    }]
-    function db(){
-        return users;
-    }
-    function usuários(email, senha){
-        let users = db();
-        let user = users.find( user =>  user.email === email && user.senha === senha);
-    if(user !== undefined) {
-        return true;
-    }
-    else{
-        return false;
-    }
-    function db(){
-        return users;
-    }
-}
-function login(){
-    var email = document.getElementById('email').value;
-    var senha = document.getElementById('senha').value;
 
-    if(isUser(email, senha)) {
-        window.location.href = "dashboard.html"
-    }
-    else{
-        alert("Login ou Senha Incorretos !!");
-    }
-}
+        document.addEventListener("DOMContentLoaded", function () {
+            //Localizar os formulários para isso
+            var forms = document.querySelectorAll('form');
+
+            //Começar com 0 pontos
+            var pontuacao = 0;
+
+            // Adicionar evento de clique para cada formulário
+            forms.forEach(function (form) {
+                form.addEventListener('click', function (event) {
+                    if (event.target.tagName === 'INPUT' && event.target.type === 'radio') {
+                        // verificar se está certa a resposta
+                        if (event.target.id === 'correta') {
+                            //subir 1 ponto se a resposta tiver certa
+                            pontuacao++;
+                            console.log('Resposta Correta! Pontuação: ' + pontuacao);
+                        } else {
+                            console.log('Resposta Incorreta. Pontuação: ' + pontuacao);
+                        }
+                    }
+                });
+            });
+        });
