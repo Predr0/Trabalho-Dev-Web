@@ -28,11 +28,11 @@ function exibirResultado() {
 
     // Lógica para determinar a imagem e o texto com base na pontuação
     if (pontuacao >= 1 && pontuacao <= 3) {
-        imagemElement.src ='';
+        imagemElement.src ='./Component/image/vasco.jpg';
         textoElement.innerText = 'Você não é nem um flamenguista.. Você deve ser um vascaíno';
     } else if (pontuacao >= 4 && pontuacao <= 6) {
-        imagemElement.src = 'caminho-para-imagem-Y.jpg';
-        textoElement.innerText = 'Texto para pontuação de 4 a 6 pontos';
+        imagemElement.src = '/Component/image/gabigol-marca-para-o-flamengo-na-final-da-libertadores-contra-o-river-plate-1586482181091_v2_4x3.jpg';
+        textoElement.innerText = 'Parece que você é um flamenguista médio de 2019, não é problema, mas você ainda pode ser mais fanático e amar mais o clube!';
     } else if (pontuacao >= 7 && pontuacao <= 9) {
         imagemElement.src = 'caminho-para-imagem-Z.jpg';
         textoElement.innerText = 'Texto para pontuação de 7 a 9 pontos';
