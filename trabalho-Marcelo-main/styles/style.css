@@ -18,6 +18,7 @@ header{
 }
 
 
+
 #title{
     flex-direction: column;
     line-height: 10px;
@@ -121,7 +122,8 @@ input{
     font-size: 15px;
 }
 .carousel-inner{
-    height: 70vh;
+    
+    height: 50vh;
     width: 120vh;
 }
 button {
