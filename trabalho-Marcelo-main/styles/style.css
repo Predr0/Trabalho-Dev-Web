@@ -148,8 +148,11 @@ input[type="date"] {
     font-size: 14px;
 }
 span2{
-    color: rgb(232, 209, 79);
+    color: blue;
 }
 vermelho{
     color:red;
+}
+titulo{
+    color:goldenrod
 }
