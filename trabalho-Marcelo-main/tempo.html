@@ -7,7 +7,6 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/fonts.css" rel="stylesheet">
     <link href="styles/media.css" rel="stylesheet">
-    <script src="scripts/script.js"></script>
 </head>
 <body>
     <ul>
@@ -16,6 +15,30 @@
         <a href="tempo.html" id="inscreva-se-btn"><li>Descubra a quanto tempo você é Flamenguista</li></a>
         <a href="sobre.html"><li>Sobre</li></a>
     </ul>
-    Javascript com o tempo total que você é Flamengo
+    <h1>Você é flamenguista a quantos anos?</h1>
+
+    <label for="dob">Data de Nascimento:</label>
+    <input type="date" id="dob">
+
+    <button onclick="calcularIdade()">Calcular Idade</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIdade() {
+            // Obtém a data de nascimento do elemento de entrada
+            var dataNascimento = document.getElementById("dob").value;
+
+            // Calcula a diferença em milissegundos entre a data atual e a data de nascimento
+            var diferenca = Date.now() - new Date(dataNascimento).getTime();
+
+            // Converte a diferença de milissegundos para anos e arredonda para baixo
+            var idade = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365.25));
+
+            // Exibe a idade na tela
+            document.getElementById("resultado").innerHTML = "Você é flamenguista a " + idade + " anos.";
+        }
+    </script>
+
 </body>
 </html>
