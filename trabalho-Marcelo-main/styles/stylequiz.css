@@ -116,3 +116,7 @@ input{
     height: 80vh;
     width: 120vh;
 }
+ul li {
+    display: inline-block;
+    margin: 0 55px;
+}

@@ -5,15 +5,18 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    height: 100vh;
 }
 
 header{
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    position: fixed;
 }
+
 
 #title{
     flex-direction: column;
@@ -50,6 +53,15 @@ a:hover{
 
 h1{
     font-weight: 200;
+    
+}
+ul{
+    text-align: center;
+    display: block;
+}
+ul li {
+    display: inline-block;
+    margin: 0 55px;
 }
 
 main{
@@ -112,3 +124,4 @@ input{
     height: 70vh;
     width: 120vh;
 }
+
