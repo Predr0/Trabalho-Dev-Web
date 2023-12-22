@@ -13,8 +13,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    position: fixed;
+    margin: 0;
 }
 
 
@@ -122,8 +121,8 @@ input{
     font-size: 15px;
 }
 .carousel-inner{
-    
-    height: 50vh;
+    padding: 70px;
+    height: 70vh;
     width: 120vh;
 }
 button {
