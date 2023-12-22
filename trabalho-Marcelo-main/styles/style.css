@@ -61,7 +61,7 @@ ul{
 }
 ul li {
     display: inline-block;
-    margin: 0 55px;
+    margin: 0 50px;
 }
 
 main{
@@ -124,4 +124,32 @@ input{
     height: 70vh;
     width: 120vh;
 }
-
+button {
+    height: 50px;
+    width: auto; /* Alteração aqui para permitir que o texto determine a largura */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 0);
+    box-sizing: border-box; /* Inclui a largura da borda no cálculo total da largura */
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.4s;
+}
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid white;
+    background-color:rgb(210, 103, 103);
+    border-radius: 5px;
+    font-size: 14px;
+}
+span2{
+    color: rgb(232, 209, 79);
+}
+vermelho{
+    color:red;
+}
