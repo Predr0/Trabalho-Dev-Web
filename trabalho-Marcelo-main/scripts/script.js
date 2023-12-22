@@ -26,7 +26,7 @@ function exibirResultado() {
     var imagemElement = document.getElementById('resultado-imagem');
     var textoElement = document.getElementById('resultado-texto');
 
-    // Lógica para determinar a imagem e o texto com base na pontuação
+ 
     if (pontuacao >= 0 && pontuacao <= 3) {
         imagemElement.src ='./Component/image/vasco.jpg';
         textoElement.innerText = 'Você não é nem um flamenguista.. Você deve ser um vascaíno';
@@ -37,7 +37,6 @@ function exibirResultado() {
         imagemElement.src = '/Component/image/raiz.jpeg';
         textoElement.innerText = 'Parabéns! Você realmente é um flamenguista raiz, um dos mais fanáticos, continue assim, você é motivo de orgulho para a nação rubro-negra!';
     } else {
-        // Pontuação fora do intervalo especificado
         imagemElement.src = '/Component/image/Captura de tela 2023-12-21 225643.png';
         textoElement.innerText = 'você é um flamenguista FANÁTICO, FLAMENGUISTA ROXO, DOENTE PELO CLUBE, o seu carinho pelo Flamengo é equivalente ou maior do que o carinho de uma mãe com o filho dela';
     }

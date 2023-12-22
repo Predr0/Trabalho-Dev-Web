@@ -34,9 +34,11 @@
 
             // Converte a diferença de milissegundos para anos e arredonda para baixo
             var idade = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365.25));
+            var idadeMeses = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+            var idadeDias = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
 
             // Exibe a idade na tela
-            document.getElementById("resultado").innerHTML = "Você é flamenguista a " + idade + " anos.";
+            document.getElementById("resultado").innerHTML = "Você é flamenguista a " + idade + " anos " + idadeMeses + "meses e " + idadeDias + "dias.";
         }
     </script>
 
