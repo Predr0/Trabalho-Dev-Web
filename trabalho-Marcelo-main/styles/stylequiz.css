@@ -8,10 +8,17 @@ body{
 }
 
 header{
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto; 
+    text-align: center;
+
 }
 
 #title{
@@ -82,6 +89,10 @@ form{
     display: flex;
     flex-direction: column;
     width: 70%;
+    max-width: 100%;
+    height: auto;    
+    display: block;  
+    margin: 0 auto; 
 }
 
 [type="submit"]{
@@ -119,4 +130,18 @@ input{
 ul li {
     display: inline-block;
     margin: 0 55px;
+}
+#resultado-imagem {
+    max-width: 100%;
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+}
+#resultado-texto {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto; 
+    text-align: center;
+    
 }

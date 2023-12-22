@@ -31,13 +31,13 @@ function exibirResultado() {
         imagemElement.src ='./Component/image/vasco.jpg';
         textoElement.innerText = 'Você não é nem um flamenguista.. Você deve ser um vascaíno';
     } else if (pontuacao >= 4 && pontuacao <= 6) {
-        imagemElement.src = '/Component/image/gabigol-marca-para-o-flamengo-na-final-da-libertadores-contra-o-river-plate-1586482181091_v2_4x3.jpg';
+        imagemElement.src = './Component/image/gabigol-marca-para-o-flamengo-na-final-da-libertadores-contra-o-river-plate-1586482181091_v2_4x3.jpg';
         textoElement.innerText = 'Parece que você é um flamenguista médio de 2019, não é problema, mas você ainda pode ser mais fanático e amar mais o clube!';
     } else if (pontuacao >= 7 && pontuacao <= 9) {
-        imagemElement.src = '/Component/image/raiz.jpeg';
+        imagemElement.src = './Component/image/raiz.jpeg';
         textoElement.innerText = 'Parabéns! Você realmente é um flamenguista raiz, um dos mais fanáticos, continue assim, você é motivo de orgulho para a nação rubro-negra!';
     } else {
-        imagemElement.src = '/Component/image/Captura de tela 2023-12-21 225643.png';
+        imagemElement.src = './Component/image/Captura de tela 2023-12-21 225643.png';
         textoElement.innerText = 'você é um flamenguista FANÁTICO, FLAMENGUISTA ROXO, DOENTE PELO CLUBE, o seu carinho pelo Flamengo é equivalente ou maior do que o carinho de uma mãe com o filho dela';
     }
 }
